@@ -1,95 +1,109 @@
+# 🧠 Resume Classification System
 
-# 📊 Stock Analysis Tool with Time Series Forecasting
-
-## 📝 Project Description
-
-Developed a comprehensive stock analysis tool that predicts stock prices with **85% accuracy** using time series forecasting techniques. The project includes **interactive visualizations** and **risk assessment modules**, enabling users to analyze market trends and make informed decisions.
+An intelligent resume classifier built using NLP and Machine Learning algorithms.  
+Automatically processes 100+ resumes with **90% accuracy**, supports **batch processing**, and includes a **user-friendly web interface** for easy classification.
 
 ---
 
-## 🚀 Features
+## 📌 Features
 
-- 📈 Stock price prediction using ARIMA / LSTM models  
-- 📊 Interactive visualizations (candlestick, moving averages, RSI, MACD)  
-- 🧮 Risk analysis (Sharpe Ratio, VaR, Drawdown, Volatility)  
-- 🗂️ Batch processing for multiple stocks  
-- 📋 Exportable reports in PDF/CSV format  
+- 🔍 **Automated Resume Parsing & Classification**
+- 🧾 **Supports multiple formats** (PDF, DOCX, TXT)
+- 🤖 **ML/NLP-based classifier** (e.g., TF-IDF + SVM/Logistic Regression)
+- 📊 **Batch resume processing**
+- 🌐 **Web Interface** built with Flask/Streamlit
+- 📈 Accuracy: ~90%
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Languages**: Python  
-- **Libraries**: Pandas, NumPy, Matplotlib, Plotly, Scikit-learn, TensorFlow/Keras (if LSTM), Statsmodels  
-- **Tools**: Jupyter Notebook, VS Code, Git, GitHub  
+- **Programming Language**: Python  
+- **Libraries**: Scikit-learn, Pandas, NumPy, NLTK/spaCy, PyPDF2/docx  
+- **Web Framework**: Flask / Streamlit  
+- **Visualization**: Matplotlib, Seaborn  
+- **Others**: Joblib, TQDM, OS, Glob
 
 ---
 
-## 📂 Project Structure
+## 📂 Folder Structure
 
 
-stock-analysis/
+
+resume-classifier/
 │
-├── data/                   # Historical stock data
-├── models/                 # Trained forecasting models
-├── notebooks/              # Jupyter notebooks with experiments
-├── visualizations/         # Generated plots and dashboards
-├── src/
-│   ├── data\_loader.py      # Fetches and processes stock data
-│   ├── predictor.py        # Time series forecasting module
-│   ├── visualizer.py       # Charts and graphs
-│   └── risk\_analyzer.py    # Risk metrics and reports
-├── requirements.txt
-└── README.md
+├── data/                 # Resume samples for training/testing
+├── web\_app/              # Flask or Streamlit-based UI
+├── models/               # Saved ML model files
+├── utils/                # Preprocessing and helper functions
+├── notebooks/            # Jupyter notebooks for EDA and experimentation
+├── requirements.txt      # Required Python packages
+├── app.py                # Main web app script
+└── README.md             # Project documentation
+
 
 
 ---
 
-## 📈 Sample Visualizations
+## 🚀 Getting Started
 
-> *(Include screenshots or gif previews here)*  
-> Example: Candlestick chart, Price prediction plot, Risk matrix, etc.
-
----
-
-## 🔍 How to Use
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/sunny3595/stock-analysis.git
-   cd stock-analysis
-
-2. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run notebook or script**
-   Launch the Jupyter notebook to explore interactive forecasts or run scripts in `src/` for CLI output.
+1. **Clone the repository**
+bash
+git clone https://github.com/yourusername/resume-classifier.git
+cd resume-classifier
 
 
-## ✅ Results
+2. **Create virtual environment and install dependencies**
 
-* Achieved **85% accuracy** in price prediction on test data
-* Risk metrics provided actionable insights
-* Tool enables confident and data-backed investment decisions
+bash
+python -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+
+3. **Train the model (Optional - already trained model included)**
+
+bash
+python train_model.py
+
+
+4. **Run the web app**
+
+bash
+python app.py   # or streamlit run app.py
+
 
 ---
 
-## 📌 Future Improvements
+## 🧪 Sample Output
 
-* Integrate real-time stock updates
-* Add more models (Prophet, XGBoost)
-* Deploy web dashboard using Streamlit or Dash
+* Upload resumes → Get classified into predefined job roles (e.g., Data Scientist, Web Developer, etc.)
+* Real-time prediction + Confidence score
+* Bulk processing via folder upload
+
+---
+
+## 📈 Accuracy & Evaluation
+
+* Achieved \~90% accuracy using TF-IDF + Logistic Regression
+* 5-fold cross-validation
+* Performance metrics: Accuracy, Precision, Recall, F1-score
+
+---
+
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a pull request.
 
 ---
 
 ## 📧 Contact
 
-For queries or collaborations:
-**Kanta Sai Dhanush**
-
+For questions or collaborations:
+**\[K. Sai Dhanush \[[saidhanush2200@gmail.com]]
 ---
 
-## ⭐️ Give it a star if you found it useful!
+## 📜 License
+
+This project is licensed under the MIT License.
